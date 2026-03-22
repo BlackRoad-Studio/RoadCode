@@ -2,48 +2,55 @@
 
 > Creator Tools division of [BlackRoad OS, Inc.](https://github.com/BlackRoad-OS-Inc)
 
-Video, audio, design, writing. Creator tools for sovereign content production.
+Video editing, graphic design, music production, and writing tools — all running on your device, your data, your agents. No cloud subscriptions. No watermarks. No upload-to-render.
 
-## Connection to BlackRoad-OS-Inc
+**Domain**: [lucidia.studio](https://lucidia.studio)
+
+## Products
+
+| Product | What It Does |
+|---------|-------------|
+| **Canvas Studio** | Vector + raster design tool with template library |
+| **Video Studio** | Timeline editor, transitions, export to any format |
+| **Writing Studio** | Distraction-free writing with local AI assist |
+| **Cadence** | Music sequencer and beat engine |
+
+## Org Hierarchy
 
 ```
-BlackRoad-OS-Inc (Parent — Data Layer)
+BlackRoad-OS-Inc (Parent — 254 repos, 67 agents, 7 nodes)
   └── BlackRoad-Studio (Creator Tools)
-      └── RoadCode (this repo — workspace + automation)
+      ├── RoadCode          ← this repo (workspace + automation)
+      ├── operator           ← CLI tools + bootstrap
+      ├── source             ← canonical source tree
+      └── templates          ← design system + starter files
 ```
 
-- **Parent Org**: [BlackRoad-OS-Inc](https://github.com/BlackRoad-OS-Inc)
-- **Master RoadCode**: [BlackRoad-OS-Inc/RoadCode](https://github.com/BlackRoad-OS-Inc/RoadCode)
-- **Operator**: [BlackRoad-OS-Inc/blackroad-operator](https://github.com/BlackRoad-OS-Inc/blackroad-operator)
-- **Domain**: [lucidia.studio](https://lucidia.studio)
-- **Repos in this org**: 11
+## Repos in This Org
 
-## Role
+- [`RoadCode`](https://github.com/BlackRoad-Studio/RoadCode) — Workspace hub (this repo)
+- [`operator`](https://github.com/BlackRoad-Studio/operator) — CLI + deployment scripts
+- [`source`](https://github.com/BlackRoad-Studio/source) — Source tree for all Studio products
+- [`templates`](https://github.com/BlackRoad-Studio/templates) — JSX design templates + brand assets
 
-| Property | Value |
-|----------|-------|
-| **Division** | Creator Tools |
-| **Parent** | BlackRoad-OS-Inc |
-| **Governance** | [Cece Protocol](https://github.com/BlackRoad-OS-Inc/RoadCode/blob/main/ORG-MAP.md) |
-| **License** | Proprietary — BlackRoad OS, Inc. |
+## How It Connects
 
-## RoadCode Standard
+- **Parent**: [BlackRoad-OS-Inc](https://github.com/BlackRoad-OS-Inc) — central coordination
+- **AI Models**: [BlackRoad-AI](https://github.com/BlackRoad-AI) — Lucidia powers local AI assist in Writing Studio
+- **Hardware**: [BlackRoad-Hardware](https://github.com/BlackRoad-Hardware) — Hailo-8 accelerators for video rendering
+- **Infrastructure**: Runs on the BlackRoad fleet — 7 nodes, $38/mo total
 
-Every BlackRoad org follows the RoadCode standard:
-- `RoadCode/` repo = workspace + automation hub
-- `.github/` repo = org profile + shared workflows
-- `operator/` repo = CLI tools + bootstrap scripts
-- `source/` repo = canonical source tree
+## Getting Started
 
-All orgs report to **BlackRoad-OS-Inc** as the central coordination layer.
+```bash
+git clone https://github.com/BlackRoad-Studio/RoadCode.git
+cd RoadCode && ./scripts/setup.sh
+```
 
-## Quick Links
+## License
 
-- [Master ORG-MAP](https://github.com/BlackRoad-OS-Inc/RoadCode/blob/main/ORG-MAP.md)
-- [Master TODO](https://github.com/BlackRoad-OS-Inc/RoadCode/blob/main/TODO.md)
-- [Master ROADMAP](https://github.com/BlackRoad-OS-Inc/RoadCode/blob/main/ROADMAP.md)
-- [All Domain Repos](https://github.com/orgs/BlackRoad-OS-Inc/repositories)
+Proprietary — BlackRoad OS, Inc. See [LICENSE](./LICENSE).
 
 ---
 
-**Proprietary Software — BlackRoad OS, Inc.**
+*Remember the Road. Pave Tomorrow.*
